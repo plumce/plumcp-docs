@@ -1,0 +1,13 @@
+;; shadow-cljs configuration
+{:source-paths
+ ["src/dev"
+  "src/main"
+  "src/test"]
+
+ :dependencies
+ [[io.github.plumce/plumcp.core-json-charred "0.1.0-SNAPSHOT"]]
+
+ :builds
+ {:app {:target :node-script
+        :main hello-mcp-cljs.core/main
+        :output-to "out/node-server.js"}}}
