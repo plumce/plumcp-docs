@@ -1,0 +1,107 @@
+---
+#title: Welcome
+#hide:
+#  - navigation
+#  - toc
+site_name: PluMCP Docs
+site_url: https://plumce.com/plumcp
+repo_url: https://github.com/plumce/plumcp
+repo_name: plumce/plumcp
+copyright: Copyright &copy; 2025-2026 Shantanu Kumar
+theme:
+  name: material
+  font:
+    text: Merriweather Sans
+    code: Red Hat Mono
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: deep orange
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: green
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  features:
+    - navigation.path
+    - navigation.tabs
+    - navigation.sections
+    - navigation.indexes
+    #- navigation.indexes
+    #- navigation.instant
+    #- navigation.sections
+    #- navigation.expand         # optional: auto-expand active section
+    - content.code.copy
+    - content.tabs.link
+    - search.suggest
+    - search.highlight
+    - navigation.footer
+
+nav:
+  - Home:
+      - Home: index.md
+      - Installation: pages/installation.md
+      - Quickstart: pages/quickstart.md
+      - Dependencies: pages/dependencies.md
+      - What's New?: pages/news.md
+      # - MCP Server:
+      #     - Server Capabilities: server/capabilities.md
+      #     - Prompts: server/prompts.md
+      #     - Resources: server/resources.md
+      #     - Tools: server/tools.md
+      #     - Advanced:
+      #         - Callbacks: server/callbacks.md
+      #         - OAuth: server/oauth.md
+      # - MCP Client:
+      #     - Client Capabilities: client/capabilities.md
+      #     - Initialize: client/init.md
+      #     - Request/Response: client/request.md
+      #     - Advanced:
+      #         - Elicitation: client/elicit.md
+      #         - Sampling: client/sampling.md
+      #         - OAuth: client/oauth.md
+  - MCP Server:
+      - MCP Server: server/index.md
+      - Advanced:
+          - Moo: lele.md
+  - MCP Client:
+      - MCP Client: client/index.md
+  - Integrations:
+      - Ring adapters: integration/ring.md
+      - Auth: integration/auth.md
+
+markdown_extensions:
+  # for Superscript, Subscript etc.
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - attr_list
+  #- emoji
+  #- pymdownx.emoji:
+  #  emoji_index: !!python/name:material.extensions.emoji.twemoji
+  #  emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # for tabbed content
+  - pymdownx.tabbed:
+      alternate_style: true
+  - admonition
+  - pymdownx.details
+  # for Syntax highlight
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
