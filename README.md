@@ -22,6 +22,12 @@ To build the static site content in `site` directory:
 ./mkdocs-build
 ```
 
+## Deployment
+
+A new change pushed to the `main` branch causes a CI build to auto deploy
+to the `gh-pages` branch.
+Ref: https://squidfunk.github.io/mkdocs-material/publishing-your-site/
+
 # License
 
 Copyright © 2025-2026 Shantanu Kumar

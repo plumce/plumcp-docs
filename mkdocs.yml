@@ -52,27 +52,31 @@ nav:
       - Dependencies: dependencies.md
       - What's New?: news.md
       # - MCP Server:
-      #     - Server Capabilities: server/capabilities.md
-      #     - Prompts: server/prompts.md
-      #     - Resources: server/resources.md
-      #     - Tools: server/tools.md
+      #     - Server Capabilities: mcpserver/capabilities.md
+      #     - Prompts: mcpserver/prompts.md
+      #     - Resources: mcpserver/resources.md
+      #     - Tools: mcpserver/tools.md
       #     - Advanced:
-      #         - Callbacks: server/callbacks.md
-      #         - OAuth: server/oauth.md
+      #         - Callbacks: mcpserver/callbacks.md
+      #         - OAuth: mcpserver/oauth.md
       # - MCP Client:
-      #     - Client Capabilities: client/capabilities.md
-      #     - Initialize: client/init.md
-      #     - Request/Response: client/request.md
+      #     - Client Capabilities: mcpclient/capabilities.md
+      #     - Initialize: mcpclient/init.md
+      #     - Request/Response: mcpclient/request.md
       #     - Advanced:
-      #         - Elicitation: client/elicit.md
-      #         - Sampling: client/sampling.md
-      #         - OAuth: client/oauth.md
+      #         - Elicitation: mcpclient/elicit.md
+      #         - Sampling: mcpclient/sampling.md
+      #         - OAuth: mcpclient/oauth.md
   - MCP Server:
-      - MCP Server: server/index.md
+      - MCP Server: mcpserver/index.md
+      - Prompts: mcpserver/prompts.md
+      - Resources: mcpserver/resources.md
+      - Tools: mcpserver/tools.md
       - Advanced:
-          - Moo: lele.md
+          - Callbacks: mcpserver/callbacks.md
+          - OAuth: mcpserver/oauth.md
   - MCP Client:
-      - MCP Client: client/index.md
+      - MCP Client: mcpclient/index.md
   - Integrations:
       - Ring adapters: integration/ring.md
       - Auth: integration/auth.md
