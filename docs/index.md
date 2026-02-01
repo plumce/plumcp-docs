@@ -2,6 +2,7 @@
 
 ![Language](https://img.shields.io/badge/Language-Clojure/CojureScript-8CC6B8)
 ![Maturity](https://img.shields.io/badge/Maturity-Alpha-orange)
+[![Ask DeepWiki (useful but watch  for hallucinations)](https://deepwiki.com/badge.svg)](https://deepwiki.com/plumce/plumcp)
 
 PluMCP is a low-dependency
 [Clojure](https://clojure.org)/[ClojureScript](https://clojurescript.org)
