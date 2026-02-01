@@ -28,7 +28,7 @@ convey the prompt metadata:
 
 - `:mcp-name` (_optional_) The MCP prompt name - same as function name
   if unspecified
-- `:mcp-type` `:prompt` indicates that this is a MCP prompt
+- `:mcp-type` `:prompt` indicates that this is an MCP prompt
 - The function docstring acts as the prompt description
 - An MCP primitive var is always an arity-1 function. The argument is
   a map of specified, annotated keyword args. In the example above -
