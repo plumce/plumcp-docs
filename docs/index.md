@@ -1,7 +1,7 @@
 # PluMCP
 
 ![Language](https://img.shields.io/badge/Language-Clojure/CojureScript-8CC6B8)
-![Maturity](https://img.shields.io/badge/Maturity-Late_Alpha-orange)
+![Maturity](https://img.shields.io/badge/Maturity-Alpha-orange)
 
 PluMCP is a low-dependency
 [Clojure](https://clojure.org)/[ClojureScript](https://clojurescript.org)
@@ -26,14 +26,14 @@ AI Agents using MCP and this library.
 
 ## Why consider PluMCP?
 
-- _Complete:_ Enjoy all non-deprecated MCP features and transports
+- _Complete:_ Enjoy almost all non-deprecated MCP features and transports
 - _Reach:_ Clojure/ClojureScript reaches Java/JavaScript eco-systems
 - _Ergonomic:_ User-friendly API, automatic error-checking
 - _Light:_ Low dependency, Bring your own dependency
 - _Flexible:_ Composable design with configurable/overridable defaults
 - _Secure:_ OAuth 2.1 integrated with Streamable HTTP transport
 
-## Status ![MCP SDK](https://img.shields.io/badge/Maturity-Late_Alpha-orange)
+## Status ![MCP SDK](https://img.shields.io/badge/Maturity-Alpha-orange)
 
 - _Protocol version:_ 2025-06-18, 2025-03-26 (TODO: 2025-11-25)
 - _Protocol implementation:_ Asynchronous, Full-duplex, Concurrent
