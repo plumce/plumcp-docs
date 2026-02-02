@@ -1,3 +1,7 @@
+---
+icon: material/message-outline
+---
+
 # MCP Prompts
 
 Prompts are parameterized message templates meant to construct
@@ -6,6 +10,7 @@ from the MCP server and with user-consent, pass parameters and
 end up with the complete prompt to be sent to the LLM.
 
 !!! info "Why Prompts?"
+
     Imagine, you have an "AI assistant" app that responds to user input.
     You are not going to send the user input directly as a prompt to the
     LLM - you would rather extract the intent and other contextual

@@ -73,12 +73,13 @@ nav:
       - Prompts: mcpserver/prompts.md
       - Resources: mcpserver/resources.md
       - Tools: mcpserver/tools.md
-      - Completion: mcpserver/completion.md
-      - Logging: mcpserver/logging.md
+      - Utility:
+          - Completion (todo): mcpserver/completion.md
+          - Logging (todo): mcpserver/logging.md
       - Advanced:
-          - Callbacks: mcpserver/callbacks.md
-          - OAuth: mcpserver/oauth.md
-          - Ring Adapter: mcpserver/ring-adapter.md
+          - Callbacks (todo): mcpserver/callbacks.md
+          - OAuth (todo): mcpserver/oauth.md
+          - Ring Adapter (todo): mcpserver/ring-adapter.md
   - MCP Client:
       - MCP Client: mcpclient/index.md
       - Roots: mcpclient/roots.md

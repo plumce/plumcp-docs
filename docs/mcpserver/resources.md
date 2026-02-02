@@ -1,3 +1,7 @@
+---
+icon: material/file-document-outline
+---
+
 # MCP Resources
 
 An MCP Resource is a URI-addressable, read-only, text or binary payload
@@ -10,8 +14,8 @@ data, a database schema, business configuration, business knowledge
 documents etc.
 
 !!! info "Resource vs Resource template - Difference only in exposure"
-    Resources may be exposed as MCP server capability in either of two
-    ways:
+
+    Resources may be exposed as MCP server capability in either of two ways:
 
     - Resource: has fixed URI, e.g. `worksheet://acct/2026/1351`
     - Resource Template: has URI template, e.g. `workorder://shopfloor/2026/{id}`

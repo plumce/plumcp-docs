@@ -1,3 +1,7 @@
+---
+icon: material/tools
+---
+
 # MCP Tools
 
 An MCP tool represents an action that a model may be allowed to invoke.
