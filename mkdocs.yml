@@ -5,7 +5,6 @@
 #  - toc
 site_name: PluMCP Docs
 site_url: https://plumce.com/plumcp
-base_url: /plumcp
 repo_url: https://github.com/plumce/plumcp
 repo_name: plumce/plumcp
 copyright: Copyright &copy; 2025-2026 Shantanu Kumar
