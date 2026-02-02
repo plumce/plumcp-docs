@@ -73,14 +73,18 @@ nav:
       - Prompts: mcpserver/prompts.md
       - Resources: mcpserver/resources.md
       - Tools: mcpserver/tools.md
+      - Logging: mcpserver/logging.md
       - Advanced:
           - Callbacks: mcpserver/callbacks.md
           - OAuth: mcpserver/oauth.md
+          - Ring Adapter: mcpserver/ring-adapter.md
   - MCP Client:
       - MCP Client: mcpclient/index.md
-  - Integrations:
-      - Ring adapters: integration/ring.md
-      - Auth: integration/auth.md
+      - Roots: mcpclient/roots.md
+      - Sampling: mcpclient/sampling.md
+      - Elicitation: mcpclient/elicitation.md
+      - Advanced:
+          - OAuth: mcpclient/oauth.md
 
 markdown_extensions:
   # for Superscript, Subscript etc.
