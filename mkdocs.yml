@@ -73,6 +73,7 @@ nav:
       - Prompts: mcpserver/prompts.md
       - Resources: mcpserver/resources.md
       - Tools: mcpserver/tools.md
+      - Completion: mcpserver/completion.md
       - Logging: mcpserver/logging.md
       - Advanced:
           - Callbacks: mcpserver/callbacks.md
