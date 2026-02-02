@@ -81,12 +81,12 @@ nav:
           - OAuth (todo): mcpserver/oauth.md
           - Ring Adapter (todo): mcpserver/ring-adapter.md
   - MCP Client:
-      - MCP Client: mcpclient/index.md
-      - Roots: mcpclient/roots.md
-      - Sampling: mcpclient/sampling.md
-      - Elicitation: mcpclient/elicitation.md
+      - MCP Client (todo): mcpclient/index.md
+      - Roots (todo): mcpclient/roots.md
+      - Sampling (todo): mcpclient/sampling.md
+      - Elicitation (todo): mcpclient/elicitation.md
       - Advanced:
-          - OAuth: mcpclient/oauth.md
+          - OAuth (todo): mcpclient/oauth.md
 
 markdown_extensions:
   # for Superscript, Subscript etc.

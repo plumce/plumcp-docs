@@ -22,6 +22,12 @@ To build the static site content in `site` directory:
 ./mkdocs-build
 ```
 
+## Reference
+
+The page icons are looked up here:
+
+Material icons - https://pictogrammers.com/library/mdi/
+
 ## Deployment
 
 A new change pushed to the `main` branch causes a CI build to auto deploy
