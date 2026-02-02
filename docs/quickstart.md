@@ -1,3 +1,7 @@
+---
+icon: material/run
+---
+
 # Quickstart
 
 This page will walk you through creating your first PluMCP server.
@@ -51,6 +55,7 @@ Edit the files as highlighted below:
     ```
 
 ## 3. Edit the sources
+
 Add or edit the source files to add an MCP tool as follows:
 
 === "Clojure"

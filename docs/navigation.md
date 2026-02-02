@@ -1,14 +1,18 @@
+---
+icon: material/navigation-variant-outline
+---
+
 # Code Navigation
 
 The PluMCP codebase is organized under various namespaces. Most of the
 public API is segregated under `plumcp.core.api.*` as listed below:
 
-| Namespace                      | Description                  |
-|--------------------------------|------------------------------|
-|`plumcp.core.api.entity-gen`    | Generate MCP entities        |
-|`plumcp.core.api.entity-support`| MCP entities Convenience fns |
-|`plumcp.core.api.mcp-client`    | Running MCP client           |
-|`plumcp.core.api.mcp-server`    | Running MCP server           |
+| Namespace                        | Description                  |
+| -------------------------------- | ---------------------------- |
+| `plumcp.core.api.entity-gen`     | Generate MCP entities        |
+| `plumcp.core.api.entity-support` | MCP entities Convenience fns |
+| `plumcp.core.api.mcp-client`     | Running MCP client           |
+| `plumcp.core.api.mcp-server`     | Running MCP server           |
 
 The namespaces other than the public API are subject to change between
 releases.

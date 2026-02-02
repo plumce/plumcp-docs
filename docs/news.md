@@ -1,3 +1,7 @@
+---
+icon: material/creation-outline
+---
+
 # What's New?
 
 ## 2026-Jan-29

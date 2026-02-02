@@ -1,3 +1,7 @@
+---
+icon: material/graph-outline
+---
+
 # Dependencies
 
 Platform (Java/Node) dependencies are already covered
@@ -63,9 +67,12 @@ This library includes the following modules
 ### Default HTTP server/client
 
 === "Clojure"
+
     - HTTP server: Java Module `jdk.httpserver`
     - HTTP client: Java Package `java.net.http`
+
 === "ClojureScript"
+
     - HTTP server: Node.js `http` module
     - HTTP client: JS `fetch` (Browser compatible)
 

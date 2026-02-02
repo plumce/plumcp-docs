@@ -1,3 +1,7 @@
+---
+icon: material/download-multiple
+---
+
 # Installation
 
 Please install the following software packages
@@ -23,7 +27,7 @@ examples - you may choose any build tool that fits your purpose.
 ## For Deployment
 
 === "Clojure"
-    - [Java 21 or higher](https://adoptium.net/temurin/releases/)  (OpenJDK derived)
+    - [Java 21 or higher](https://adoptium.net/temurin/releases/) (OpenJDK derived)
 === "Clojure on GraalVM"
     - None, if you have a native binary
 === "ClojureScript"
