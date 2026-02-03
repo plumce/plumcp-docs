@@ -73,19 +73,19 @@ nav:
       - Resources: mcpserver/resources.md
       - Tools: mcpserver/tools.md
       - Utility:
-          - Completion (todo): mcpserver/completion.md
-          - Logging (todo): mcpserver/logging.md
+          - Completion 🚧: mcpserver/completion.md
+          - Logging 🚧: mcpserver/logging.md
       - Advanced:
-          - Callbacks (todo): mcpserver/callbacks.md
-          - OAuth (todo): mcpserver/oauth.md
-          - Ring Adapter (todo): mcpserver/ring-adapter.md
+          - Callbacks 🚧: mcpserver/callbacks.md
+          - OAuth 🚧: mcpserver/oauth.md
+          - Ring Adapter 🚧: mcpserver/ring-adapter.md
   - MCP Client:
-      - MCP Client (todo): mcpclient/index.md
-      - Roots (todo): mcpclient/roots.md
-      - Sampling (todo): mcpclient/sampling.md
-      - Elicitation (todo): mcpclient/elicitation.md
+      - MCP Client 🚧: mcpclient/index.md
+      - Roots 🚧: mcpclient/roots.md
+      - Sampling 🚧: mcpclient/sampling.md
+      - Elicitation 🚧: mcpclient/elicitation.md
       - Advanced:
-          - OAuth (todo): mcpclient/oauth.md
+          - OAuth 🚧: mcpclient/oauth.md
 
 markdown_extensions:
   # for Superscript, Subscript etc.
@@ -95,10 +95,10 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.tilde
   - attr_list
-  #- emoji
-  #- pymdownx.emoji:
-  #  emoji_index: !!python/name:material.extensions.emoji.twemoji
-  #  emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # for Material icons, e.g. :material-new-box: or :material-star:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   # for tabbed content
   - pymdownx.tabbed:
       alternate_style: true
