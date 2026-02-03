@@ -2,7 +2,7 @@
 icon: material/tools
 ---
 
-# MCP Tools
+# MCP Tools (Server)
 
 An MCP tool represents an action that a model may be allowed to invoke.
 In the LLM context, MCP tools may be described as actions that the LLM
@@ -25,6 +25,10 @@ another tool example:
 ```clojure linenums="1" hl_lines="16-25"
 --8<-- "apps/hello-mcp-clj/src/hello_mcp_clj/tool.clj"
 ```
+
+!!! abstract "Client call"
+
+    See [Tools (Client)](../mcpclient/tools.md) for the client call.
 
 #### Tool Var definition
 

@@ -26,7 +26,9 @@ Here is a simple Chain of Verification (CoVe) prompt example.
 --8<-- "apps/hello-mcp-clj/src/hello_mcp_clj/prompt.clj"
 ```
 
-See [Prompts (Client)](../mcpclient/prompts.md) for the client call.
+!!! abstract "Client call"
+
+    See [Prompts (Client)](../mcpclient/prompts.md) for the client call.
 
 #### Prompt Var definition
 

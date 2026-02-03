@@ -2,7 +2,7 @@
 icon: material/file-document-outline
 ---
 
-# MCP Resources
+# MCP Resources (Server)
 
 An MCP Resource is a URI-addressable, read-only, text or binary payload
 of data at the MCP server that a model is allowed to see. The resource
@@ -28,6 +28,10 @@ Here are resource and resource template examples:
 ```clojure linenums="1" hl_lines="12-19 30-38"
 --8<-- "apps/hello-mcp-clj/src/hello_mcp_clj/resource.clj"
 ```
+
+!!! abstract "Client call"
+
+    See [Resources (Client)](../mcpclient/resources.md) for the client call.
 
 #### Resource Var definition
 
