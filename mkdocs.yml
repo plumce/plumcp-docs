@@ -69,9 +69,9 @@ nav:
       #         - OAuth: mcpclient/oauth.md
   - MCP Server:
       - MCP Server: mcpserver/index.md
-      - Prompts: mcpserver/prompts.md
-      - Resources: mcpserver/resources.md
-      - Tools: mcpserver/tools.md
+      - Prompts💻: mcpserver/prompts.md
+      - Resources💻: mcpserver/resources.md
+      - Tools💻: mcpserver/tools.md
       - Utility:
           - Completion 🚧: mcpserver/completion.md
           - Logging 🚧: mcpserver/logging.md
@@ -81,9 +81,9 @@ nav:
           - Ring Adapter 🚧: mcpserver/ring-adapter.md
   - MCP Client:
       - MCP Client 🚧: mcpclient/index.md
-      - Prompts: mcpclient/prompts.md
-      - Resources: mcpclient/resources.md
-      - Tools: mcpclient/tools.md
+      - Prompts👤: mcpclient/prompts.md
+      - Resources👤: mcpclient/resources.md
+      - Tools👤: mcpclient/tools.md
       - Features:
           - Roots 🚧: mcpclient/roots.md
           - Sampling 🚧: mcpclient/sampling.md
