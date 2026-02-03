@@ -2,7 +2,7 @@
 icon: material/message-outline
 ---
 
-# MCP Prompts
+# MCP Prompts (Server)
 
 Prompts are parameterized message templates meant to construct
 LLM prompts at the MCP-Client end. MCP clients lookup prompts
@@ -25,6 +25,8 @@ Here is a simple Chain of Verification (CoVe) prompt example.
 ```clojure linenums="1" hl_lines="17-28"
 --8<-- "apps/hello-mcp-clj/src/hello_mcp_clj/prompt.clj"
 ```
+
+See [Prompts (Client)](../mcpclient/prompts.md) for the client call.
 
 #### Prompt Var definition
 

@@ -81,9 +81,13 @@ nav:
           - Ring Adapter 🚧: mcpserver/ring-adapter.md
   - MCP Client:
       - MCP Client 🚧: mcpclient/index.md
-      - Roots 🚧: mcpclient/roots.md
-      - Sampling 🚧: mcpclient/sampling.md
-      - Elicitation 🚧: mcpclient/elicitation.md
+      - Prompts: mcpclient/prompts.md
+      - Resources: mcpclient/resources.md
+      - Tools: mcpclient/tools.md
+      - Features:
+          - Roots 🚧: mcpclient/roots.md
+          - Sampling 🚧: mcpclient/sampling.md
+          - Elicitation 🚧: mcpclient/elicitation.md
       - Advanced:
           - OAuth 🚧: mcpclient/oauth.md
 
