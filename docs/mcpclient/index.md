@@ -41,7 +41,7 @@ namespace. Remainder of this page assumes you have these aliases setup.
 
 (def http-transport
   (hct/make-streamable-http-transport
-   ((hc/make-http-client "http://localhost:3000/mcp"))))
+   (hc/make-http-client "http://localhost:3000/mcp")))
 
 (def client-transport http-transport)  ; or stdio-transport
 
@@ -52,20 +52,10 @@ namespace. Remainder of this page assumes you have these aliases setup.
 ## 2. Initialize the client
 
 MCP client initialization needs to be followed up with a notification
-of initialization, which you can do as follows:
+of initialization, which you can do together as follows:
 
 ```clojure
 (mc/initialize-and-notify! the-client)
-```
-
-If you want control over how/when notification happens, or you want to
-perform some step before sending notification, you may use the lower
-level API:
-
-```clojure
-(mc/initialize! the-client
-                (fn [result]
-                  (mc/notify-initialized the-client)))
 ```
 
 ## 3. MCP Client operation
@@ -74,17 +64,24 @@ The MCP Client operations have their corresponding API. Some of the API
 calls that accept client and a handler function as argument are shown
 below:
 
-| MCP Client Operation        | Client API call              | Arguments          |
-|-----------------------------|------------------------------|--------------------|
-| List MCP prompts            | `mc/list-prompts`            | `[client handler]` |
-| List MCP resources          | `mc/list-resources`          | `[client handler]` |
-| List MCP resource templates | `mc/list-resource-templates` | `[client handler]` |
-| List MCP tools              | `mc/list-tools`              | `[client handler]` |
-| Get MCP prompt              | `mc/get-prompt`              | `[client handler]` |
-| Read MCP resource           | `mc/read-resource`           | `[client handler]` |
-| Call MCP tool               | `mc/call-tool`               | `[client handler]` |
-| Complete (Completion)       | `mc/complete`                | `[client handler]` |
-| Ping                        | `mc/ping`                    | `[client handler]` |
+### 3.1 Listing primitives
+
+| MCP Client Operation        | Client API call              | Arguments         |
+|-----------------------------|------------------------------|-------------------|
+| List MCP prompts            | `mc/list-prompts`            | `[client & opts]` |
+| List MCP resources          | `mc/list-resources`          | `[client & opts]` |
+| List MCP resource templates | `mc/list-resource-templates` | `[client & opts]` |
+| List MCP tools              | `mc/list-tools`              | `[client & opts]` |
+
+### 3.2 Individual primitive operation
+
+| MCP Client Operation  | Client API call    | Arguments                       |
+|-----------------------|--------------------|---------------------------------|
+| Get MCP prompt        | `mc/get-prompt`    | `[client p-name p-args & opts]` |
+| Read MCP resource     | `mc/read-resource` | `[client resource-uri  & opts]` |
+| Call MCP tool         | `mc/call-tool`     | `[client t-name t-args & opts]` |
+| Complete (Completion) | `mc/complete`      | `[client comp-request  & opts]` |
+| Ping                  | `mc/ping`          | `[client               & opts]` |
 
 !!! note "Note!"
 
@@ -94,12 +91,15 @@ below:
 For example, you can print the list the MCP tools as follows:
 
 ```clojure
-(mc/list-tools the-client (fn [tools]
-                            (println "Tools" tools)))
-```
+;; In Clojure (JVM) it returns a value
+(let [tools (mc/list-tools the-client)]
+  (println "Tools" tools))
 
-The `handler` is an arity-1 callback function that is invoked after the
-response for the client request arrives.
+;; In CLJS it returns a js/Promise
+(-> (mc/list-tools the-client)
+    (.then (fn [tools]
+             (println "Tools" tools))))
+```
 
 ## 4. Disconnect the client
 
