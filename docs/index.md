@@ -34,6 +34,13 @@ AI Agents using MCP and this library.
 - _Flexible:_ Composable design with configurable/overridable defaults
 - _Secure:_ OAuth 2.1 integrated with Streamable HTTP transport
 
+## Who is using PluMCP?
+
+[<img src="assets/img/using-eca-logo-round.png" width="50" title="Editor Code Assistant">](https://eca.dev/)
+[<img src="assets/img/using-nubank-logo-round.png" width="50" title="Nubank">](https://nubank.com.br/)
+
+Are you using PluMCP? [TELL-US!](https://clojurians.slack.com/archives/plumcp)
+
 ## Status ![MCP SDK](https://img.shields.io/badge/Maturity-Alpha-orange)
 
 - _Protocol version:_ 2025-06-18, 2025-03-26 (TODO: 2025-11-25)
