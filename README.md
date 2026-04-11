@@ -26,8 +26,8 @@ To build the static site content in `site` directory:
 
 The page icons are looked up here:
 
-Material icons - https://pictogrammers.com/library/mdi/
-Icon references - https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/
+- Material icons - https://pictogrammers.com/library/mdi/
+- Icon references - https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/
 
 ## Deployment
 

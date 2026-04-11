@@ -4,13 +4,13 @@
 ![Maturity](https://img.shields.io/badge/Maturity-Alpha-orange)
 [![Ask DeepWiki (useful but watch  for hallucinations)](https://deepwiki.com/badge.svg)](https://deepwiki.com/plumce/plumcp)
 
-PluMCP is a low-dependency
-[Clojure](https://clojure.org)/[ClojureScript](https://clojurescript.org)
-library for making
-[Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
-clients and servers. Connect your business (data,
-process and software) with AI Language Models and
-AI Agents using MCP and this library.
+**[Model Context Protocol (MCP)](https://modelcontextprotocol.io/) SDK
+for Java and JavaScript runtimes. Build MCP clients and servers using
+[Clojure](https://clojure.org)/[ClojureScript](https://clojurescript.org).**
+
+PluMCP is a low-dependency Clojure/ClojureScript library for making MCP
+clients and servers. Connect AI Agents with your business (data, process
+and software) using MCP and idiomatic Clojure.
 
 ??? info inline end "Supported platforms"
 
