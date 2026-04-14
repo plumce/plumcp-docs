@@ -37,7 +37,7 @@ examples - you may choose any build tool that fits your purpose.
 
 Use PluMCP (e.g. `plumcp.core` module) coordinates as follows:
 
-- Leiningen: `[io.github.plumce/plumcp.core "<version>"]`
+- Leiningen/Shadow-CLJS: `[io.github.plumce/plumcp.core "<version>"]`
 - deps.edn: `io.github.plumce/plumcp.core {:mvn/version "<version>"}`
 
 As you see `io.github.plumce` is the common Group ID for all modules.
