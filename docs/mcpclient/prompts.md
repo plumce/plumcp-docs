@@ -17,9 +17,14 @@ as follows:
 You can list the server-defined prompts using `list-prompts`:
 
 ```clojure
-(mc/list-prompts plumcp-client
-                 (fn [prompts]
-                   (println "Prompts" prompts)))
+;; CLJ (JVM) returns a value
+(let [prompts (mc/list-prompts plumcp-client)]
+  (println "Prompts" prompts))
+
+;; CLJS returns js/Promise
+(-> (mc/list-prompts plumcp-client)
+    (.then (fn [prompts]
+             (println "Prompts" prompts))))
 ```
 
 ## Get prompt
@@ -32,11 +37,19 @@ by name the call would be:
   "What is the best way to learn about medicine as someone
   who has no background in medicine?")
 
-(mc/get-prompt plumcp-client
-               "chain_of_verification"
-               {:query query}
-               (fn [prompt-result]
-                 (println prompt-result)))
+;; CLJ (JVM) returns a value
+(when-let [prompt-result (mc/get-prompt plumcp-client
+                                        "chain_of_verification"
+                                        {:query query})]
+  (println prompt-result))
+
+;; CLJS returns a js/Promise
+(-> (mc/get-prompt plumcp-client
+                   "chain_of_verification"
+                   {:query query})
+    (.then (fn [prompt-result]
+             (when prompt-result
+               (println prompt-result)))))
 ```
 
 After you get the prompt result, you can use it to send a request to a
@@ -52,12 +65,12 @@ response handler to the call:
 (mc/get-prompt plumcp-client
                "chain_of_verification"
                {:query query}
-               (fn [prompt-result]
-                 (println prompt-result))
-               (fn [jsonrpc-error-response]
-                 ;; handle the error
-                 (println jsonrpc-error-response)))
+               {:on-error (fn [id jsonrpc-error]
+                            ;; handle the error
+                            (println "ERROR getting prompt"
+                                     jsonrpc-error)
+                            nil)})
 ```
 
-Unlike the result (data), the error handler receives the entire JSON-RPC
-error response (map) - the error payload is located at the `:error` key.
+The `:on-error` option is specified to use a handler for the error. Rest
+is similar to result handling (CLJ vs CLJS difference remains as it is.)
