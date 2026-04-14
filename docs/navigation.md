@@ -9,9 +9,11 @@ public API is segregated under `plumcp.core.api.*` as listed below:
 
 | Namespace                        | Description                  |
 | -------------------------------- | ---------------------------- |
+| `plumcp.core.api.capability`     | Granular MCP capabilities    |
 | `plumcp.core.api.entity-gen`     | Generate MCP entities        |
 | `plumcp.core.api.entity-support` | MCP entities Convenience fns |
 | `plumcp.core.api.mcp-client`     | Running MCP client           |
+| `plumcp.core.api.mcp-runtime`    | Common context operations    |
 | `plumcp.core.api.mcp-server`     | Running MCP server           |
 
 The namespaces other than the public API are subject to change between
