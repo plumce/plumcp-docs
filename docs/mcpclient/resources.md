@@ -17,50 +17,83 @@ client namespace as follows:
 You can list the server-defined resources using `list-resources` and
 resource-templates using `list-resource-templates`:
 
-```clojure
-(mc/list-resources plumcp-client
-                   (fn [resources]
-                     (println "Resources" resources)))
+### Clojure
 
-(mc/list-resource-templates plumcp-client
-                            (fn [resource-templates]
-                              (println "Resource templates"
-                                       resource-templates)))
+In Clojure (JVM) `list-resources` and `list-resource-templates` return
+a value.
+
+```clojure
+(let [resources (mc/list-resources plumcp-client)]
+  (println "Resources" resources))
+
+(let [templates (mc/list-resource-templates plumcp-client)]
+  (println "Resource templates" resource-templates))
 ```
 
+### ClojureScript
+
+In ClojureScript `list-resources` and `list-resource-templates` return
+a js/Promise, so we need to chain through the value.
+
+```clojure
+(-> (mc/list-resources plumcp-client)
+    (.then (fn [resources]
+             (println "Resources" resources))))
+
+(-> (mc/list-resource-templates plumcp-client)
+    (.then (fn [templates]
+             (println "Resource templates" templates))))
+```
 
 ## Read resource
 
 To read the resource defined in [Resources (Server)](../mcpserver/resources.md)
 by name the call would be:
 
-```clojure
-(mc/read-resource plumcp-client
-                  "text://fire/safety"
-                  (fn [resource-result]
-                    (println resource-result)))
+### Clojure
 
-(mc/read-resource plumcp-client
-                  "info://consumable/148"
-                  (fn [resource-result]
-                    (println resource-result)))
+In Clojure `read-resource` returns a value.
+
+```clojure
+(let [resource (mc/read-resource plumcp-client
+                                 "text://fire/safety")]
+  (println resource))
+
+(let [resource (mc/read-resource plumcp-client
+                                 "info://consumable/148")]
+  (println resource))
+```
+
+### ClojureScript
+
+In ClojureScript `read-resource` returns a `js/Promise`.
+
+```clojure
+(-> (mc/read-resource plumcp-client
+                      "text://fire/safety")
+    (.then (fn [resource]
+             (println resource))))
+
+(-> (mc/read-resource plumcp-client
+                      "info://consumable/148")
+    (.then (fn [resource]
+             (println resource))))
 ```
 
 ### Error handling
 
 If an error is encountered when reading a resource, the error is printed
 on the screen by default. To handle the error you can specify an error
-response handler to the call:
+handler to the call:
 
 ```clojure
 (mc/read-resource plumcp-client
                   "info://consumable/148"
-                  (fn [resource-result]
-                    (println resource-result))
-                  (fn [jsonrpc-error-response]
-                    ;; handle the error
-                    (println jsonrpc-error-response)))
+                  {:on-error (fn [id jsonrpc-error]
+                               (println "ERROR reading resource"
+                                        jsonrpc-error)
+                               nil)})
 ```
 
-Unlike the result (data), the error handler receives the entire JSON-RPC
-error response (map) - the error payload is located at the `:error` key.
+The `:on-error` option is specified to use a handler for the error. Rest
+is similar to result handling (CLJ vs CLJS difference remains as it is.)

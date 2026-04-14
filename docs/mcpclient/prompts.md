@@ -17,11 +17,11 @@ as follows:
 You can list the server-defined prompts using `list-prompts`:
 
 ```clojure
-;; CLJ (JVM) returns a value
+;; In CLJ (JVM) this returns a value
 (let [prompts (mc/list-prompts plumcp-client)]
   (println "Prompts" prompts))
 
-;; CLJS returns js/Promise
+;; In CLJS this returns a js/Promise
 (-> (mc/list-prompts plumcp-client)
     (.then (fn [prompts]
              (println "Prompts" prompts))))
@@ -37,13 +37,13 @@ by name the call would be:
   "What is the best way to learn about medicine as someone
   who has no background in medicine?")
 
-;; CLJ (JVM) returns a value
+;; In CLJ (JVM) this returns a value
 (when-let [prompt-result (mc/get-prompt plumcp-client
                                         "chain_of_verification"
                                         {:query query})]
   (println prompt-result))
 
-;; CLJS returns a js/Promise
+;; In CLJS this returns a js/Promise
 (-> (mc/get-prompt plumcp-client
                    "chain_of_verification"
                    {:query query})
@@ -59,7 +59,7 @@ suitable AI language model.
 
 If an error is encountered when getting a prompt, the error is printed
 on the screen by default. To handle the error you can specify an error
-response handler to the call:
+handler to the call:
 
 ```clojure
 (mc/get-prompt plumcp-client
