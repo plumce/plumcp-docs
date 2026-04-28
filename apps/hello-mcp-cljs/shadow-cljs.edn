@@ -5,7 +5,7 @@
   "src/test"]
 
  :dependencies
- [[io.github.plumce/plumcp.core-json-charred "0.2.0-rc2"]]
+ [[io.github.plumce/plumcp.core-json-charred "0.2.0"]]
 
  :builds
  {:app {:target :node-script
