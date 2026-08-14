@@ -2,10 +2,9 @@
 icon: material/download-multiple
 ---
 
-# Installation
+# Prerequisite - Installation
 
-Please install the following software packages
-required for Clojure/ClojureScript.
+Install the following software packages required for Clojure/ClojureScript.
 
 This documentation uses [Leiningen](https://leiningen.org)
 and [shadow-cljs](https://github.com/thheller/shadow-cljs) for
@@ -45,15 +44,16 @@ As you see `io.github.plumce` is the common Group ID for all modules.
 Find all modules and versions here:
 [PluMCP on Clojars](https://clojars.org/search?q=plumcp.core)
 
-| Module name               | Required? | Artifact ID                 |
-|---------------------------|-----------|-----------------------------|
-| plumcp.core               | Required  | `plumcp.core`               |
-| plumcp.core-dev           | Optional  | `plumcp.core-dev`           |
-| plumcp.core-auth          | Optional  | `plumcp.core-auth`          |
-| plumcp.core-json-charred  | Either    | `plumcp.core-json-charred`  |
-| plumcp.core-json-cheshire | Either    | `plumcp.core-json-cheshire` |
-| plumcp.core-json-datajson | Either    | `plumcp.core-json-datajson` |
-| plumcp.core-json-jsonista | Either    | `plumcp.core-json-jsonista` |
+| Module name               | Required? | Type  | Artifact ID                 |
+|---------------------------|-----------|-------|-----------------------------|
+| plumcp.core               | Required  | Core  | `plumcp.core`               |
+| plumcp.core-dev           | Optional  | Addon | `plumcp.core-dev`           |
+| plumcp.core-auth          | Optional  | Addon | `plumcp.core-auth`          |
+| plumcp.core-json-charred  | Either    | JSON  | `plumcp.core-json-charred`  |
+| plumcp.core-json-cheshire | Either    | JSON  | `plumcp.core-json-cheshire` |
+| plumcp.core-json-datajson | Either    | JSON  | `plumcp.core-json-datajson` |
+| plumcp.core-json-jsonista | Either    | JSON  | `plumcp.core-json-jsonista` |
 
 At a minimum, you need `plumcp.core` and any one of the JSON modules
-listed above.
+listed above. See the [Dependencies page](dependencies.md) to learn
+about module inter-dependency.
