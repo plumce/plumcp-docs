@@ -22,7 +22,7 @@ As you may have seen in [Quickstart](../quickstart.md) a tool is
 composed of the tool metadata and a handler function. Let us see
 another tool example:
 
-```clojure linenums="1" hl_lines="16-25"
+```clojure linenums="1" hl_lines="17-26"
 --8<-- "apps/hello-mcp-clj/src/hello_mcp_clj/tool.clj"
 ```
 
