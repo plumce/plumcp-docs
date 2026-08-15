@@ -17,6 +17,8 @@ respond with:
 - North Indian
 - South Indian
 
+## Code example
+
 ```clojure linenums="1" hl_lines="24-33"
 --8<-- "apps/hello-mcp-clj/src/hello_mcp_clj/completion.clj"
 ```

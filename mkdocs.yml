@@ -74,7 +74,7 @@ nav:
       - Tools💻: mcpserver/tools.md
       - Utility:
           - Completion💻: mcpserver/completion.md
-          - Logging 🚧: mcpserver/logging.md
+          - Logging💻: mcpserver/logging.md
       - Advanced:
           - Callbacks 🚧: mcpserver/callbacks.md
           - OAuth 🚧: mcpserver/oauth.md
