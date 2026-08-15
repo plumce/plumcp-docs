@@ -73,7 +73,7 @@ nav:
       - Resources💻: mcpserver/resources.md
       - Tools💻: mcpserver/tools.md
       - Utility:
-          - Completion 🚧: mcpserver/completion.md
+          - Completion💻: mcpserver/completion.md
           - Logging 🚧: mcpserver/logging.md
       - Advanced:
           - Callbacks 🚧: mcpserver/callbacks.md
