@@ -85,7 +85,7 @@ nav:
       - Resources👤: mcpclient/resources.md
       - Tools👤: mcpclient/tools.md
       - Features:
-          - Roots 🚧: mcpclient/roots.md
+          - Roots👤: mcpclient/roots.md
           - Sampling 🚧: mcpclient/sampling.md
           - Elicitation 🚧: mcpclient/elicitation.md
       - Advanced:
