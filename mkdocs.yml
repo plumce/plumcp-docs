@@ -86,7 +86,7 @@ nav:
       - Tools👤: mcpclient/tools.md
       - Features:
           - Roots👤: mcpclient/roots.md
-          - Sampling 🚧: mcpclient/sampling.md
+          - Sampling👤: mcpclient/sampling.md
           - Elicitation 🚧: mcpclient/elicitation.md
       - Advanced:
           - OAuth 🚧: mcpclient/oauth.md
