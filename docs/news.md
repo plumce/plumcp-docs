@@ -4,6 +4,10 @@ icon: material/creation-outline
 
 # What's New?
 
+## 2026-Oct-03
+
+PluMCP 0.3.0 is released with full MCP 2025-Nov-25 spec support. The [changes](https://github.com/plumce/plumcp/blob/v0.3.0/CHANGELOG.md#030---2026-oct-03) include Task orchestration and full OAuth2 support as highlights.
+
 ## 2026-May-02
 
 PluMCP is sponsored by
