@@ -8,7 +8,7 @@ icon: material/key-variant
 
 This requires PluMCP 0.3.0 or higher.
 
-The MCP 2025-Nov-25 spec does not promote OAuth Dynamic Client Registration (DCR) as the default/preferred client registration mechanism anymore. It also supports Client ID Metadata Documents (CIMD) as a first class alternative to DCR. With version 0.3.0 uptake ECA may publish CIMD support as follows:
+The MCP 2025-Nov-25 spec does not promote OAuth Dynamic Client Registration (DCR) as the default/preferred client registration mechanism anymore. It also supports Client ID Metadata Documents (CIMD) as a first class alternative to DCR. An MCP client may publish CIMD support as follows:
 
 Publish a file `client.json` (or suitably named, e.g. `mcp-client.json`) on a website with the following content:
 
