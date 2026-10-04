@@ -1,8 +1,8 @@
 (defproject hello-mcp-clj "0.1.0-SNAPSHOT"
   :description "FIXME: write description"
   :url "https://example.com/FIXME"
-  :dependencies [[org.clojure/clojure "1.12.4"]
-                 [io.github.plumce/plumcp.core-json-charred "0.2.2"]
+  :dependencies [[org.clojure/clojure "1.12.6"]
+                 [io.github.plumce/plumcp.core-json-charred "0.3.0"]
                  [com.github.clj-easy/graal-build-time "1.0.5"]]
   :main ^:skip-aot hello-mcp-clj.core
   :target-path "target/%s"
