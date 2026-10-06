@@ -56,15 +56,19 @@ Below are few common options (check source for exhaustive list):
 
 ## Potential Questions
 
-_Adapted from:_ https://lnkd.in/p/ghprHMAA
+_Adapted from:_ [LinkedIn post by Shikha Singh](https://lnkd.in/p/ghprHMAA)
+
+More reading: [Principal AI Engineer Handbook: MCP](https://handbook.vinodspattar.in/learn/modules/06-mcp/)
 
 #### How does the agent discover MCP servers and their capabilities?
 
 - It does not "find" them. Servers come from config or an allowlisted registry.
-- The initialize handshake has both sides declare capabilities.
+- The initialize handshake (till MCP 2025-11-25 spec) has both sides declare
+  capabilities. Starting with MCP 2026-07-28 spec, version, client-info and
+  capabilities are included in `_meta` attribute of every request.
 - The `tools/list` result includes name, description and schema. That is what
   the LLM sees.
-- Tool descriptions are prompt input. You should review and pin those.
+- Tool descriptions are prompt input. You should pin and review those.
 
 #### How do you handle authentication and authorization between the agent and MCP servers?
 
