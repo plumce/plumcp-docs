@@ -53,3 +53,36 @@ Below are few common options (check source for exhaustive list):
    :ns [app.foo app.bar] ; optional
    })
 ```
+
+## Potential Questions
+
+_Adapted from:_ https://lnkd.in/p/ghprHMAA
+
+#### How does the agent discover MCP servers and their capabilities?
+
+- It does not "find" them. Servers come from config or an allowlisted registry.
+- The initialize handshake has both sides declare capabilities.
+- The `tools/list` result includes name, description and schema. That is what
+  the LLM sees.
+- Tool descriptions are prompt input. You should review and pin those.
+
+#### How do you handle authentication and authorization between the agent and MCP servers?
+
+- The MCP server acts as an OAuth 2.1 resource server.
+- When an HTTP request without a valid token lands on the MCP server HTTP 401
+  is returned with resource metadata, which leads the client to auth-code and
+  [PKCE](https://www.mcpforge.tech/blog/oauth-pkce-mcp).
+- The token is short-lived and audience-bound to that one server.
+- The token is not used for passthrough. Downstream APIs get a token exchange.
+
+#### How do you scope OAuth per capability, especially for sensitive actions?
+
+- Design a tool for single scope, e.g. `payments.read` and `payments.transfer`
+  are distinct scopes - tools using these scopes should serve scoped purpose.
+- PluMCP checks the OAuth2 scope on every `tools/call`. When designing tools
+  you may filter the `tools/list` by scope.
+- Missing scope for a call returns HTTP 403 `insufficient_scope`, followed by
+  step-up and human approval.
+- Amount, environment and tenant limits may live in gateway policy, with an
+  audit log per user and per agent for traceability.
+
