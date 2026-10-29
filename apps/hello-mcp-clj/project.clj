@@ -2,7 +2,7 @@
   :description "FIXME: write description"
   :url "https://example.com/FIXME"
   :dependencies [[org.clojure/clojure "1.12.6"]
-                 [io.github.plumce/plumcp.core-json-charred "0.3.0"]]
+                 [io.github.plumce/plumcp.core-json-charred "0.3.1"]]
   :main ^:skip-aot hello-mcp-clj.core
   :target-path "target/%s"
   :plugins [[cider/cider-nrepl "0.62.2"]]
