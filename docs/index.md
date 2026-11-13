@@ -43,10 +43,16 @@ Are you using PluMCP? [TELL-US!](https://clojurians.slack.com/archives/plumcp)
 
 ## Status ![MCP SDK](https://img.shields.io/badge/Maturity-Alpha-orange)
 
-- _Protocol version:_ 2025-06-18, 2025-03-26 (TODO: 2025-11-25)
+- _Protocol version:_ 2025-11-25, 2025-06-18, 2025-03-26 (TODO: 2026-07-28)
 - _Protocol implementation:_ Asynchronous, Full-duplex, Concurrent
 - _Features:_ All non-deprecated client/server features supported
 - _Transports:_ STDIO, Streamable HTTP (optionally with OAuth 2.1)
+
+| PluMCP version | MCP 2025-11-25 | MCP 2025-06-18 | MCP 2025-03-26 |
+|----------------|----------------|----------------|----------------|
+| 0.3.x          | Supported      | Supported      | Supported      |
+| 0.2.x          |                | Supported      | Supported      |
+| 0.1.x          |                | Partial Support| Partial Support|
 
 ### Transports
 
